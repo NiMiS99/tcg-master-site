@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TCG Master — Bot Telegram & Discord per Collezionisti TCG</title>
     <meta name="description" content="Il tuo hub per collezionismo e trading di carte TCG. Ricerca prezzi, portfolio, alert, news, trading board e community.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🃏</text></svg>">
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <meta property="og:image" content="logo.jpg">
+    <meta property="og:title" content="TCG Master — Bot Telegram & Discord per TCG">
+    <meta property="og:description" content="Il tuo hub per collezionismo e trading di carte TCG.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
@@ -38,8 +41,10 @@
             padding: 1rem 2rem;
             display: flex; justify-content: space-between; align-items: center;
         }
-        nav .logo { font-size: 1.5rem; font-weight: 800; }
+        nav .logo { font-size: 1.5rem; font-weight: 800; display: flex; align-items: center; gap: 0.5rem; }
         nav .logo span { color: var(--primary); }
+        nav .logo img { height: 32px; width: auto; border-radius: 6px; }
+        .hero-logo { max-width: 280px; width: 100%; height: auto; margin: 0 auto 1.5rem; display: block; border-radius: 12px; box-shadow: 0 8px 32px rgba(88,101,242,0.3); }
         nav ul { display: flex; gap: 2rem; list-style: none; }
         nav a { color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
         nav a:hover { color: var(--text); }
@@ -174,7 +179,7 @@
 <body>
 
 <nav>
-    <div class="logo">🃏 TCG<span>Master</span></div>
+    <div class="logo"><img src="logo.jpg" alt="TCG Master"> TCG<span>Master</span></div>
     <ul>
         <li><a href="#features">Funzionalità</a></li>
         <li><a href="#platforms">Piattaforme</a></li>
@@ -187,6 +192,7 @@
 <!-- Hero -->
 <div class="hero">
     <div class="animate">
+        <img src="logo.jpg" alt="TCG Master" class="hero-logo">
         <h1>TCG Master</h1>
         <p>Il tuo hub per collezionismo e trading di carte TCG. Ricerca prezzi, portfolio, alert, news, trading board e community — tutto in un bot.</p>
         <div class="hero-buttons">
@@ -346,7 +352,7 @@
 </section>
 
 <footer>
-    <p>🃏 TCG Master — Bot Telegram & Discord per collezionisti TCG</p>
+    <p><img src="logo.jpg" alt="TCG Master" style="height:24px; vertical-align:middle; border-radius:4px;"> TCG Master — Bot Telegram & Discord per collezionisti TCG</p>
     <p style="margin-top:1rem;">
         <a href="https://t.me/TCGPortalBot">Telegram</a> •
         <a href="https://github.com/NiMiS99/tcg-ecosystem">GitHub</a> •
@@ -357,3 +363,6 @@
 
 </body>
 </html>
+
+
+
